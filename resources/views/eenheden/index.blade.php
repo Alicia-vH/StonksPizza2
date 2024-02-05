@@ -4,7 +4,7 @@
     </x-slot:title>
     <div>
         <div class="text-3xl object-center">
-            <h1>Eenheden lijst</h1>
+            <h1>Eenheden lijts</h1>
             <br>
         </div>
         <a href="{{ route('eenheden.create') }}">Maak een nieuwe eenheid aan</a>
