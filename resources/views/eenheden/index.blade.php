@@ -28,7 +28,7 @@
                     <td>{{ $eenheid->id }}</td>
                     <td>{{ $eenheid->eenhedens}}</td>
                     <td>
-                        <a href="{{ route('eenheden.edit', $eenheid->id) }}">Edit</a>
+                        <a href="{{ route('eenheden.edit', $eenheid->id) }}">Bijwerken</a>
                         <form method="POST" action="{{ route('eenheden.destroy', $eenheid->id) }}" style="display: inline;">
                             @csrf
                             @method('DELETE')

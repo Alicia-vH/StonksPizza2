@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\IngredientenController;
 use  App\Http\Controllers\EenhedenController;
+use  App\Http\Controllers\PizzaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,7 +33,7 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-// Routes for eenheden CRUD
+// Routes voor eenheden CRUD
 
 Route::get('/eenheden/index', [EenhedenController::class, 'index'])->name('eenheden.index');
 Route::get('/eenheden/create', [EenhedenController::class, 'create'])->name('eenheden.create');
@@ -42,7 +43,7 @@ Route::put('/eenheden/{id}', [EenhedenController::class, 'update'])->name('eenhe
 Route::delete('/eenheden/{id}', [EenhedenController::class, 'destroy'])->name('eenheden.destroy');
 
 
-// Routes for ingrediënten CRUD
+// Routes voor ingrediënten CRUD
 
 Route::get('/ingrediënten/index', [IngredientenController::class, 'index'])->name('ingrediënten.index');
 Route::get('/ingrediënten/create', [IngredientenController::class, 'create'])->name('ingrediënten.create');
@@ -51,3 +52,14 @@ Route::get('/ingrediënten/{id}/edit', [IngredientenController::class, 'edit'])-
 Route::put('/ingrediënten/{id}', [IngredientenController::class, 'update'])->name('ingrediënten.update');
 Route::delete('/ingrediënten/{id}', [IngredientenController::class, 'destroy'])->name('ingrediënten.destroy');
 Route::get('/ingrediënten', [IngredientenController::class, 'index'])->name('ingrediënten.index');
+
+
+// Routes voor Pizza CRUD
+
+Route::get('/menu/index', [PizzaController::class, 'index'])->name('menu.index');
+Route::get('/menukaart/create', [PizzaController::class, 'create'])->name('menukaart.create');
+Route::post('/menu', [PizzaController::class, 'store'])->name('menu.store');
+Route::get('/menu/{id}/edit', [PizzaController::class, 'edit'])->name('menu.edit');
+Route::put('/menu/{id}', [PizzaController::class, 'update'])->name('menu.update');
+Route::delete('/menukaart/{id}', [PizzaController::class, 'destroy'])->name('menukaart.destroy');
+Route::get('/menu', [PizzaController::class, 'index'])->name('menu.index');

@@ -21,7 +21,7 @@
         <nav class="grid grid-rows-2 grid-cols-3 col-span-2">
             <a href="/" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Home</a>
             <a href="/menu" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Menu</a>
-            <a href="/cart" class="block bg-orange-600 border-green-800 border-solid border-4 flex-items-center cursor-pointer text-white p-5">
+            <a href="/cart" class="block bg-orange-600 border-green-800 border-solid border-4 text-white p-5">
                 <div class="flex items-center px-4">
                     <i class="bi bi-house-door-fill"></i>
                     <i class='bx bx-cart'></i>
